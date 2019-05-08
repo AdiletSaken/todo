@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+        	<div class="controls">
+	        	<input v-model="newTodo" placeholder="Todo">
+	        	<button v-on:click="addTodo">Add todo</button>
+	        </div>
+	        <div v-if="unfinishedTodos.length">
+		        <h3>Unfinished tasks:</h3>
+	        	<ul>
+	        		<li v-for="todo in unfinishedTodos">
+		        		{{ todo.text }}
+		        		<button v-on:click="removeTodo(todo)">Done</button>
+	        		</li>
+	        	</ul>
+	        </div>
+        	<div v-if="finishedTodos.length">
+	        	<h3>Finished tasks:</h3>
+	        	<ul>
+	        		<li v-for="todo in finishedTodos">
+		        		<span class="strikethrough">{{ todo.text }}</span>
+		        		<button v-on:click="undoTodo(todo)">Undo</button>
+	        		</li>
+	        	</ul>
+	        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+:root {
+	--vueGreen: #42b983;
+}
+
+* {
+	font-family: 'Gugi';
+	color: var(--vueGreen);
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	--vueGreen: #42b983;
+}
+
+#app div {
+	clear: both;
+}
+
+#app ul {
+	color: var(--vueGreen);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#app ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+#app ul button {
+	padding: 10px 20px;
+	border: 2px solid var(--vueGreen);
+	border-radius: 5px;
+	color: var(--vueGreen);
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.controls {
+	display: flex;
+	margin-top: 300px;
+}
+
+.controls * {
+	padding: 10px;
+	border: 2px solid var(--vueGreen);
+	border-radius: 5px;
+	color: var(--vueGreen);
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.controls input {
+	width: 200px;
+	margin-right: 10px;
+}
+
+.controls button {
+	padding: 10px 20px;
+	background-color: rgba(0,0,0,0);
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
