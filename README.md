@@ -1,3 +1,3 @@
-# ToDo list using Vue.js
+# ToDo
 
 # [Demo](https://adiletsaken.github.io/todo)
